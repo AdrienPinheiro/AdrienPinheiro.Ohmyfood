@@ -1,0 +1,33 @@
+@import 'variable';
+@import 'color';
+@import 'mixin';
+@import 'extension';
+
+
+// On peut faire des calculs
+
+body{
+    font-size: $texte;
+    @media screen and (min-width:768px) { //Media Queries
+        font-size: $texte * 3;     // On peut y faire des calcules
+    }
+}
+
+
+// & prend toujours le parent
+
+
+.recherche{
+    border: $bordure;
+    @include carre(200px); // Mixin
+    @extend %centrer; // extension
+}
+
+@each $nom, $breakpoint in $grille {  // Boucles avec Media Queries ! La grille est dans les variables.
+    @media screen and (min-width: $breakpoint) {
+        body{
+            width: $breakpoint * 0.8;
+            font-size: $texte * 2;
+        }        
+    }    
+}

@@ -1,0 +1,21 @@
+// Couleurs
+
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$terciaire: #99E2D0;
+//texte
+
+$texte: 10px;
+
+// Bordure
+
+$bordure: 1px solid $terciaire;
+
+// Boucle pour Media Queries
+
+$grille: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);

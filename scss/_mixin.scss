@@ -1,0 +1,4 @@
+@mixin carre($cote) {
+    width: $cote;
+    height: $cote;
+}
