@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    p{
+        font-family: $roboto;
+    }
+}
+
+
+// body{
+//    font-size: $texte;
+//    @media screen and (min-width:768px) { //Media Queries
+//        font-size: $texte * 3;     // On peut y faire des calcules
+//    }
+//}
+
+//@each $nom, $breakpoint in $grille {  // Boucles avec Media Queries ! La grille est dans les variables.
+//    @media screen and (min-width: $breakpoint) {
+//        body{
+//            width: $breakpoint * 0.8;
+//            font-size: $texte * 2;
+//        }        
+//    }    
+//}

@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <title> Ohmyfood </title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/49dac82f1e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 <header>
-    <h1> Ohmyfood</h1>
-
-    
+    <h1> ohmyfood</h1>  
 </header>
 
 <section class="recherche">
-    <form>
-
+    <form method="post" action=".php" class="search">
+        <label for="search-input" class="serch-label">
+            <i class="fas fa-map-marker-alt"></i>
+        </label>
+        <input type="text" name="search-input" id="search-input" value="Paris, Belleville" class="search-input"/>
     </form>
 
     <h2> Réserver le menu qui vous convient</h2>
     <p> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
-    <button>
+    <button type="submit" class="search-submit">
         <span class="button-text"> Explorer nos restaurants</span>
     </button>
 
@@ -37,37 +39,43 @@
 
         <div class="card-fonctionnement">
             <div class="card-fonctionnement-number">
-
+                1
             </div>
-            <div class="card-fonctionnement-icon">
-
-            </div>
-            <div class="card-fonctionnement-text">
-
-            </div>
-        </div>
-
-        <div class="card-fonctionnement">
-            <div class="card-fonctionnement-number">
-
-            </div>
-            <div class="card-fonctionnement-icon">
-
-            </div>
-            <div class="card-fonctionnement-text">
-
+            <div class="card-fonctionnement-border">
+                <div class="card-fonctionnement-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="card-fonctionnement-text">
+                    Choisissez un restaurant
+                </div>
             </div>
         </div>
 
         <div class="card-fonctionnement">
             <div class="card-fonctionnement-number">
-
+                2
             </div>
-            <div class="card-fonctionnement-icon">
-
+            <div class="card-fonctionnement-border">
+                <div class="card-fonctionnement-icon">
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <div class="card-fonctionnement-text">
+                    Composez votre menu
+                </div>
             </div>
-            <div class="card-fonctionnement-text">
+        </div>
 
+        <div class="card-fonctionnement">
+            <div class="card-fonctionnement-number">
+                3
+            </div>
+            <div class="card-fonctionnement-border">
+                <div class="card-fonctionnement-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="card-fonctionnement-text">
+                    Dégustez au restaurant
+                </div>
             </div>
         </div>
     </div>
@@ -75,97 +83,97 @@
 
 <section class="restaurants">
 
+    <h2> Restaurants</h2>
     <div class="column">
 
-        <div class="card-restaurants">
+        <a href="html/la palette du goût.html"><div class="card-restaurants">
             <div class="card-restaurants-img">
-
+                <img src="photo/la palette du goût/lapalettedugout.jpg"/>
             </div>
-            <div class="card-restaurants-text">
+            <div class="card-restaurants-texte">
                 <div class="card-restaurants-titre">
-
+                    La palette du goût
                 </div>
                 <div class="card-restaurants-paragraphe">
-
-                </div>
+                    Ménilmontant
+                </div></a>
                 <div class="card-restaurants-coeur">
-
+                    <i class="far fa-heart"></i>
                 </div>
             </div>
         </div>
 
-        <div class="card-restaurants">
+        <a href="html/la note enchantée.html"><div class="card-restaurants">
             <div class="card-restaurants-img">
-
+                <img src="photo/la note enchantée/lanoteenchantee.jpg"/>
             </div>
-            <div class="card-restaurants-text">
+            <div class="card-restaurants-texte">
                 <div class="card-restaurants-titre">
-
+                    La note enchantée
                 </div>
                 <div class="card-restaurants-paragraphe">
-
-                </div>
+                    Charonne
+                </div></a>
                 <div class="card-restaurants-coeur">
-                    
+                    <i class="far fa-heart"></i>                    
                 </div>
             </div>
         </div>
 
-        <div class="card-restaurants">
+        <a href="html/à la française.html" ><div class="card-restaurants">
             <div class="card-restaurants-img">
-
+                <img src="photo/à la française/alafrancaise.jpg"/>
             </div>
-            <div class="card-restaurants-text">
+            <div class="card-restaurants-texte">
                 <div class="card-restaurants-titre">
-
+                    À la française
                 </div>
                 <div class="card-restaurants-paragraphe">
-
-                </div>
+                    Cité Rouge
+                </div></a>
                 <div class="card-restaurants-coeur">
-                    
+                    <i class="far fa-heart"></i>                    
+                </div>
+            </div>
+        </div>        
+
+        <a href="html/la délice des sens.html"><div class="card-restaurants">
+            <div class="card-restaurants-img">
+                <img src="photo/le délice des sens/ledelicedessens.jpg"/>
+            </div>
+            <div class="card-restaurants-texte">
+                <div class="card-restaurants-titre">
+                    Le délice des sens
+                </div>
+                <div class="card-restaurants-paragraphe">
+                    Folie-Méricourt
+                </div></a>
+                <div class="card-restaurants-coeur">
+                    <i class="far fa-heart"></i>
                 </div>
             </div>
         </div>
-
-        <div class="card-restaurants">
-            <div class="card-restaurants-img">
-
-            </div>
-            <div class="card-restaurants-text">
-                <div class="card-restaurants-titre">
-
-                </div>
-                <div class="card-restaurants-paragraphe">
-
-                </div>
-                <div class="card-restaurants-coeur">
-                    
-                </div>
-            </div>
-        </div>
+        
     </div>
 </section>
 
 <footer>
 
-    <div class="card-footer">
-        <div class="card-footer-titre">
+    <h2>ohmyfood</h2>
 
-        </div>
-        <ul>
-            <div>
-                <i></i>
+        <ul class="card-footer">
+            <div class="list-footer">
+                <i class="fas fa-utensils"></i>
                 <li class=""> Proposer un restaurant</li>
             </div>
-            <div>
-                <i></i>
+            <div class="list-footer">
+                <i class="fas fa-hands-helping"></i>
                 <li> Devenir partenaire</li>
             </div>
             <li> Mention légales</li>
-            <li> Contact</li>
+            <li><a href="mailto:ohmyfoodpro@gmail.com">Contact</a></li>
         </ul>
-    </div>
+
 </footer>
 
 </body>

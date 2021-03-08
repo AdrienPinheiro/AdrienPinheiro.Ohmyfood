@@ -1,0 +1,29 @@
+footer{
+    background-color: rgba(0, 0, 0, 0.90);
+    color: white;
+    h2{
+        font-family: $shrikhand;
+        padding: 20px 20px;
+        margin: 0;
+    }
+    ul{
+        margin: 0;
+        list-style: none;
+        justify-content: space-between;
+        padding: 0 20px;
+        .list-footer{
+            display:flex;
+            & i{
+                padding-right: 5px;
+                font-size: 10px;
+            }
+            & li a{
+                color: white;
+            }
+        }
+    }
+    
+}
+
+
+

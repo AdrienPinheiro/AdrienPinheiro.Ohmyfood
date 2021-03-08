@@ -1,0 +1,33 @@
+h2{
+    padding-left: 30px;
+}
+
+.card-fonctionnement{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    .card-fonctionnement-number{
+        background-color: $primaire;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+    }
+    .card-fonctionnement-border{
+        display: flex;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgba(207, 207, 207, 0.877);
+        .card-fonctionnement-icon i{
+            height: 60px;
+            line-height: 60px;
+            padding: 0 20px;
+        }
+        .card-fonctionnement-text{
+            height: 60px;
+            line-height: 60px;
+            padding-right: 50px;
+        }  
+    }
+}

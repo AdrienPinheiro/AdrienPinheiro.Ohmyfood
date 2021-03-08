@@ -1,0 +1,33 @@
+@import 'utils/variable';
+@import 'base/color';
+@import 'utils/mixin';
+@import 'utils/extension';
+@import 'base/police';
+@import 'layout/header';
+@import 'layout/body';
+@import 'layout/section-recherche';
+@import 'layout/section-fonctionnement';
+@import 'layout/section-restaurants';
+@import 'composants/fonctionspe';
+@import 'layout/footer';
+
+
+// On peut faire des calculs
+
+
+
+
+
+
+
+// & prend toujours le parent
+
+
+
+
+//.recherche{
+//    border: $bordure;
+//    @include carre(200px); // Mixin
+//    @extend %centrer; // extension
+//}
+
