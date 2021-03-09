@@ -5,6 +5,9 @@
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
+    & a{
+        @extend %sansdécoliennoir;
+    }
     .card-restaurants-img{
         height: 100px;
         width: 200px;

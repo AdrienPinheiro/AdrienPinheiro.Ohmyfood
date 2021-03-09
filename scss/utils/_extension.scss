@@ -4,3 +4,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+%sansdécolienblanc{
+    color: $blanc;
+    text-decoration: none;
+}
+
+%sansdécoliennoir{
+    color: $noir;
+    text-decoration: none;
+}

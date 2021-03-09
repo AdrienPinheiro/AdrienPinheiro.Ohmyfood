@@ -1,3 +1,13 @@
+footer ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.card-restaurants a {
+  color: #000000;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url(../../Police/Roboto/Roboto-Regular.ttf);
@@ -26,6 +36,14 @@ body p {
   font-family: "Roboto", cursive;
 }
 
+body h1 {
+  margin: 0;
+}
+
+body h2 {
+  margin: 0;
+}
+
 .recherche {
   text-align: center;
   background-color: #f1f1f1;
@@ -48,8 +66,9 @@ body p {
   font-weight: bold;
 }
 
-h2 {
+.fonctionnement h2 {
   padding-left: 30px;
+  padding-top: 20px;
 }
 
 .card-fonctionnement {
@@ -153,13 +172,13 @@ h2 {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 footer h2 {
   font-family: "Shrikhand", cursive;
-  padding: 20px 20px;
+  padding: 10px 20px;
   margin: 0;
 }
 
@@ -169,7 +188,7 @@ footer ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
 footer ul .list-footer {
@@ -181,9 +200,5 @@ footer ul .list-footer {
 footer ul .list-footer i {
   padding-right: 5px;
   font-size: 10px;
-}
-
-footer ul .list-footer li a {
-  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

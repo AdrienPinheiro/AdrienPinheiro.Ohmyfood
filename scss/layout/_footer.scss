@@ -1,28 +1,28 @@
 footer{
-    background-color: rgba(0, 0, 0, 0.90);
-    color: white;
+    background-color: $noir;
+    color: $blanc;
     h2{
         font-family: $shrikhand;
-        padding: 20px 20px;
+        padding: 10px 20px;
         margin: 0;
     }
     ul{
         margin: 0;
         list-style: none;
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 20px 20px;
+        & li a{
+            @extend %sansdécolienblanc
+        }
         .list-footer{
             display:flex;
             & i{
                 padding-right: 5px;
                 font-size: 10px;
             }
-            & li a{
-                color: white;
-            }
+            
         }
-    }
-    
+    }   
 }
 
 
