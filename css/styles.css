@@ -3,7 +3,7 @@ footer ul li a {
   text-decoration: none;
 }
 
-.card-restaurants a {
+.card-restaurants a, .card-menu a {
   color: #000000;
   text-decoration: none;
 }
@@ -200,5 +200,69 @@ footer ul .list-footer {
 footer ul .list-footer i {
   padding-right: 5px;
   font-size: 10px;
+}
+
+.card-presentation {
+  height: 250px;
+  width: 50%;
+}
+
+.card-presentation .card-presentation-img {
+  height: 100px;
+  width: 50%;
+}
+
+.card-presentation .card-presentation-img img {
+  height: 100px;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-presentation .card-presentation-texte {
+  height: 100px;
+  width: 50%;
+  position: relative;
+}
+
+.card-presentation .card-presentation-texte .card-presentation-titre {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.card-presentation .card-presentation-texte .card-presentation-coeur {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card-presentation .card-presentation-texte .card-presentation-coeur i:hover {
+  color: #9356DC;
+  background-color: #9356DC;
+}
+
+.card-menu {
+  height: 100px;
+  width: 50%;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.card-menu .card-menu-titre {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.card-menu .card-menu-paragraphe {
+  font-size: 0.8em;
+}
+
+.card-menu .card-menu-prix {
+  position: absolute;
+  top: 40px;
+  right: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

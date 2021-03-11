@@ -1,1 +1,60 @@
 // Spécificité des pages de commande des resto
+
+.card-presentation{
+    height: 250px;
+    width: 50%;
+    .card-presentation-img{
+        height: 100px;
+        width: 50%;
+        & img{
+            height: 100px;
+            width: 50%;
+            object-fit: cover;
+        }
+    }
+    .card-presentation-texte{
+        height: 100px;
+        width: 50%;
+        position: relative;
+        .card-presentation-titre{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .card-presentation-coeur{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            & i:hover {
+                color: $primaire;
+                background-color: $primaire;
+            }
+        }
+    }
+}
+
+.card-menu{
+    height: 100px;
+    width: 50%;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    & a{
+        @extend %sansdécoliennoir;
+    }
+    .card-menu-titre{
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .card-menu-paragraphe{
+        font-size: 0.8em;
+    }
+    .card-menu-prix{
+        position: absolute;
+        top: 40px;
+        right: 10px;
+    }
+
+}
+
