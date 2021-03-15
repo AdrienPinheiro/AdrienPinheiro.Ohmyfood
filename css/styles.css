@@ -3,7 +3,7 @@ footer ul li a {
   text-decoration: none;
 }
 
-.card-restaurants a, .card-menu a {
+.card-restaurants a, .heading a, .card-menu a {
   color: #000000;
   text-decoration: none;
 }
@@ -29,6 +29,13 @@ header h1 {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
 }
 
@@ -66,9 +73,29 @@ body h2 {
   font-weight: bold;
 }
 
+.fonctionnement {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .fonctionnement h2 {
-  padding-left: 30px;
-  padding-top: 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 20px;
+}
+
+.fonctionnement .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 30px 0;
 }
 
 .card-fonctionnement {
@@ -110,6 +137,35 @@ body h2 {
   height: 60px;
   line-height: 60px;
   padding-right: 50px;
+}
+
+.restaurants {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurants h2 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 20px;
+}
+
+.restaurants .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 30px 0;
+}
+
+.restaurants .card-restaurants {
+  margin: 0 30px;
 }
 
 .card-restaurants {
@@ -174,6 +230,7 @@ body h2 {
 footer {
   background-color: #000000;
   color: #FFFFFF;
+  height: auto;
 }
 
 footer h2 {
@@ -202,26 +259,45 @@ footer ul .list-footer i {
   font-size: 10px;
 }
 
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+}
+
+.heading i {
+  padding: 0 30px;
+  line-height: 90px;
+}
+
 .card-presentation {
-  height: 250px;
-  width: 50%;
+  height: auto;
+  width: 100%;
 }
 
 .card-presentation .card-presentation-img {
-  height: 100px;
-  width: 50%;
+  height: 150px;
+  width: 100%;
 }
 
 .card-presentation .card-presentation-img img {
-  height: 100px;
-  width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 200px;
+  width: 100%;
 }
 
 .card-presentation .card-presentation-texte {
-  height: 100px;
-  width: 50%;
+  height: 50px;
+  width: 100%;
+  border: 1px solid grey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: grey;
   position: relative;
 }
 
@@ -229,6 +305,8 @@ footer ul .list-footer i {
   font-style: italic;
   font-weight: bold;
   font-size: 2em;
+  padding: 0 30px;
+  line-height: 50px;
 }
 
 .card-presentation .card-presentation-texte .card-presentation-coeur {
@@ -242,27 +320,64 @@ footer ul .list-footer i {
   background-color: #9356DC;
 }
 
+.menu {
+  background-color: grey;
+}
+
+.menu .entrees {
+  margin-top: 20px;
+}
+
+.menu .entrees h2 {
+  padding: 0 20px;
+  font-weight: normal;
+  border-bottom: 2px solid blue;
+}
+
+.menu .plats {
+  margin-top: 20px;
+}
+
+.menu .plats h2 {
+  padding: 0 20px;
+  font-weight: normal;
+  border-bottom: 2px solid blue;
+}
+
+.menu .desserts {
+  margin-top: 20px;
+}
+
+.menu .desserts h2 {
+  padding: 0 20px;
+  font-weight: normal;
+  border-bottom: 2px solid blue;
+}
+
 .card-menu {
-  height: 100px;
+  height: 50px;
   width: 50%;
   position: relative;
   border: 1px solid black;
-  border-radius: 25px;
-  margin-bottom: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
 }
 
 .card-menu .card-menu-titre {
   font-weight: bold;
   font-size: 1em;
+  padding-left: 10px;
+  line-height: 0;
 }
 
 .card-menu .card-menu-paragraphe {
   font-size: 0.8em;
+  padding-left: 10px;
 }
 
 .card-menu .card-menu-prix {
   position: absolute;
-  top: 40px;
+  top: 10px;
   right: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

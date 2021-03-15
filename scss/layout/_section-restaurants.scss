@@ -1,3 +1,23 @@
+.restaurants{
+    display: grid;
+    justify-content: center;
+    h2{
+        justify-self: center;
+        padding: 20px;
+    }
+    .column{
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0;
+    }
+    .card-restaurants{
+        margin: 0 30px;
+    }
+}
+
+
+
+
 .card-restaurants{
     height: auto;
     width: 200px;
