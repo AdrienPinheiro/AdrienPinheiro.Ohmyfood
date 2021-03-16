@@ -14,3 +14,18 @@
     color: $noir;
     text-decoration: none;
 }
+
+%titremenu {
+    h2{
+        padding: 0 20px;
+            font-weight:normal;
+            font-size: 1em;
+        &:after{
+            content: '';
+            width: 40px;
+            height: 5px;
+            display: block;
+            background-color: $terciaire;
+        }
+    }
+}

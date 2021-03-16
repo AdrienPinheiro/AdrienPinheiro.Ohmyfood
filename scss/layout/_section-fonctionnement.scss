@@ -1,21 +1,35 @@
 .fonctionnement{
     display: grid;
     justify-content: center;
+    @include mobile-only {
+        width: 100%;
+        display: block;
+    }
     h2{
-    justify-self: center;
-     padding: 20px
+        justify-self: center;
+        padding: 20px;
+        width: 100%;
+        @include mobile-only {
+            padding-top: 30px;
+            padding-left: 20px;
+        }
     }
     .column{
         display: flex;
         flex-direction: row;
         margin: 30px 0;
+        @include mobile-only {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
 }
 
 .card-fonctionnement{
     display: flex;
     flex-direction: row;
-    margin: 20px 0;
+    margin: 20px 10px;
     .card-fonctionnement-number{
         background-color: $primaire;
         height: 20px;
@@ -23,16 +37,18 @@
         border-radius: 10px;
         text-align: center;
         color: white;
+        position: relative;
+        top: 20px;
+        left: -10px;
     }
     .card-fonctionnement-border{
         display: flex;
-        border: 1px solid black;
+        box-shadow: 5px 5px 5px 5px rgb(200, 200, 200);
         border-radius: 20px;
-        background-color: rgba(207, 207, 207, 0.877);
         .card-fonctionnement-icon i{
             height: 60px;
             line-height: 60px;
-            padding: 0 20px;
+            padding-right: 10px;
         }
         .card-fonctionnement-text{
             height: 60px;
