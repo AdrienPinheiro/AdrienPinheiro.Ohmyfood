@@ -1,31 +1,26 @@
 .restaurants{
-    display: grid;
     justify-content: center;
-    background-color: rgb(241, 241, 241);
-    @include mobile-only {
-        display: block;
-    }
+    background-color: #F6F6F6;
     h2{
-        justify-self: center;
-        padding: 20px;
+        text-align: center;
+        padding: 20px 0;
         @include mobile-only {
+            text-align: start;
             padding-top: 30px;
-            padding-left: 20px;
+            padding-left: 30px;
         }
     }
     .column{
         display: flex;
         flex-direction: row;
-        margin: 30px 0;
-        @include mobile-only {
+        padding: 30px 0;
+        justify-content: space-around;
+        @include mobile-only; @include tablette-only{
             flex-direction: column;
             align-items: center;
         }
     }
 }
-
-
-
 
 .card-restaurants{
     height: auto;
@@ -36,17 +31,20 @@
     position: relative;
     margin: 0 30px;
     @include mobile-only{
-        margin: 10px 0;
-        width: 80%; 
+        margin: 15px 0;
+        width: 90%;
+        height: 200px;
     }
     &.card-restaurants-nouveau{
         &:after{
             content: 'Nouveau';
-            padding: 3px;
+            font-size: small;
+            padding: 5px 10px;
             background-color: $terciaire;
             position: absolute;
-            top: 5px;
-            right: 5px;
+            top: 10px;
+            right: 10px;
+            color: #008766;
         }
     }
     & a{
@@ -56,7 +54,7 @@
         height: 100px;
         width: 200px;
         @include mobile-only{
-            height: 100px;
+            height: 150px;
             width: 100%;
         }
         & img{
@@ -64,18 +62,18 @@
             height: 100px;
             width: 200px;
             @include mobile-only{
-                height: 100px;
+                height: 150px;
                 width: 100%;
             }
         }
     }
     .card-restaurants-texte{
         height: auto;
-        width: 200px;
         position: relative;
-        padding: 5px;
+        padding: 5px 10px;
         .card-restaurants-titre{
             font-weight: bold;
+            
         }
         .card-restaurants-paragraphe{
             font-size: 15px;

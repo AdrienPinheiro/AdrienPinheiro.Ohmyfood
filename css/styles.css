@@ -9,7 +9,6 @@ footer ul li a {
 }
 
 .menu .entrees h2, .menu .plats h2, .menu .desserts h2 {
-  padding: 0 20px;
   font-weight: normal;
   font-size: 1em;
 }
@@ -67,7 +66,7 @@ body h2 {
 
 .recherche {
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #F6F6F6;
 }
 
 .recherche .search {
@@ -81,7 +80,7 @@ body h2 {
       -ms-flex-pack: center;
           justify-content: center;
   height: 40px;
-  background-color: rgba(187, 187, 187, 0.8);
+  background-color: #EAEAEA;
   -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8) inset;
           box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8) inset;
 }
@@ -108,31 +107,21 @@ body h2 {
 }
 
 .fonctionnement {
-  display: -ms-grid;
-  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-@media screen and (max-width: 539px) {
-  .fonctionnement {
-    width: 100%;
-    display: block;
-  }
-}
-
 .fonctionnement h2 {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  padding: 20px;
-  width: 100%;
+  text-align: center;
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 539px) {
   .fonctionnement h2 {
+    text-align: start;
     padding-top: 30px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 
@@ -144,7 +133,9 @@ body h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 30px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 539px) {
@@ -153,7 +144,6 @@ body h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -171,16 +161,8 @@ body h2 {
   margin: 20px 10px;
 }
 
-.card-fonctionnement .card-fonctionnement-number {
-  background-color: #9356DC;
-  height: 20px;
-  width: 20px;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  position: relative;
-  top: 20px;
-  left: -10px;
+.card-fonctionnement .card-fonctionnement-vio {
+  background-color: #F5EDFF;
 }
 
 .card-fonctionnement .card-fonctionnement-border {
@@ -190,6 +172,19 @@ body h2 {
   -webkit-box-shadow: 5px 5px 5px 5px #c8c8c8;
           box-shadow: 5px 5px 5px 5px #c8c8c8;
   border-radius: 20px;
+  background-color: #F6F6F6;
+}
+
+.card-fonctionnement .card-fonctionnement-border .card-fonctionnement-number {
+  background-color: #9356DC;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 20px;
+  left: -10px;
 }
 
 .card-fonctionnement .card-fonctionnement-border .card-fonctionnement-icon i {
@@ -205,30 +200,22 @@ body h2 {
 }
 
 .restaurants {
-  display: -ms-grid;
-  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f1f1f1;
-}
-
-@media screen and (max-width: 539px) {
-  .restaurants {
-    display: block;
-  }
+  background-color: #F6F6F6;
 }
 
 .restaurants h2 {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  padding: 20px;
+  text-align: center;
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 539px) {
   .restaurants h2 {
+    text-align: start;
     padding-top: 30px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 
@@ -240,10 +227,12 @@ body h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 30px 0;
+  padding: 30px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 1025px) {
   .restaurants .column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -267,18 +256,21 @@ body h2 {
 
 @media screen and (max-width: 539px) {
   .card-restaurants {
-    margin: 10px 0;
-    width: 80%;
+    margin: 15px 0;
+    width: 90%;
+    height: 200px;
   }
 }
 
 .card-restaurants.card-restaurants-nouveau:after {
   content: 'Nouveau';
-  padding: 3px;
+  font-size: small;
+  padding: 5px 10px;
   background-color: #99E2D0;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
+  color: #008766;
 }
 
 .card-restaurants .card-restaurants-img {
@@ -288,7 +280,7 @@ body h2 {
 
 @media screen and (max-width: 539px) {
   .card-restaurants .card-restaurants-img {
-    height: 100px;
+    height: 150px;
     width: 100%;
   }
 }
@@ -302,16 +294,15 @@ body h2 {
 
 @media screen and (max-width: 539px) {
   .card-restaurants .card-restaurants-img img {
-    height: 100px;
+    height: 150px;
     width: 100%;
   }
 }
 
 .card-restaurants .card-restaurants-texte {
   height: auto;
-  width: 200px;
   position: relative;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .card-restaurants .card-restaurants-texte .card-restaurants-titre {
@@ -356,7 +347,7 @@ body h2 {
 }
 
 footer {
-  background-color: #000000;
+  background-color: #353535;
   color: #FFFFFF;
   height: auto;
 }
@@ -440,23 +431,24 @@ footer ul .list-footer i {
   border-top: 1px solid grey;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: #c8c8c8;
+  background-color: #F6F6F6;
   position: relative;
+  padding-top: 20px;
 }
 
 .card-presentation .card-presentation-texte .card-presentation-titre {
   font-style: italic;
   font-weight: bold;
   font-size: 2em;
-  padding: 0 30px;
+  padding: 0 20px;
   line-height: 50px;
 }
 
 .card-presentation .card-presentation-texte .coeur {
   position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 1em;
+  top: 30px;
+  right: 25px;
+  font-size: 1.5em;
 }
 
 .card-presentation .card-presentation-texte .coeur i:hover {
@@ -465,7 +457,8 @@ footer ul .list-footer i {
 }
 
 .menu {
-  background-color: #c8c8c8;
+  background-color: #F6F6F6;
+  padding: 0 15px;
 }
 
 .menu .entrees {
@@ -482,11 +475,10 @@ footer ul .list-footer i {
 
 .card-menu {
   height: 50px;
-  width: 50%;
+  margin: 20px 0;
   position: relative;
   border: 1px solid black;
   border-radius: 15px;
-  margin: 20px 0;
 }
 
 .card-menu .card-menu-titre {
@@ -505,5 +497,13 @@ footer ul .list-footer i {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.commande {
+  text-align: center;
+}
+
+.commande .search-submit {
+  padding: 0 40px;
 }
 /*# sourceMappingURL=styles.css.map */

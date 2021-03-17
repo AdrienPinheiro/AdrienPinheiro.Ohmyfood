@@ -38,20 +38,21 @@
         border-top: 1px solid grey;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
-        background-color: rgb(200, 200, 200);
+        background-color: #F6F6F6;
         position: relative;
+        padding-top: 20px;
         .card-presentation-titre{
             font-style: italic;
             font-weight: bold;
             font-size: 2em;
-            padding: 0 30px;
+            padding: 0 20px;
             line-height: 50px;
         }
         .coeur{
             position:absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 1em;
+            top: 30px;
+            right: 25px;
+            font-size: 1.5em;
             & i:hover { 
                 color: $primaire;
                 font-weight: bold;
@@ -61,7 +62,8 @@
 }
 
 .menu{
-    background-color: rgb(200, 200, 200);
+    background-color: #F6F6F6;
+    padding: 0 15px;
     .entrees{
         margin-top: 20px;
         @extend %titremenu;        
@@ -80,11 +82,10 @@
 
 .card-menu{
     height: 50px;
-    width: 50%;
+    margin: 20px 0;
     position: relative;
     border: 1px solid black;
     border-radius: 15px;
-    margin: 20px 0;
     & a{
         @extend %sansdécoliennoir;
     }
@@ -105,3 +106,9 @@
     }
 }
 
+.commande{
+    text-align: center;
+    .search-submit{
+        padding: 0 40px;
+    }
+}
