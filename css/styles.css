@@ -50,6 +50,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
+  font-family: "Roboto", cursive;
 }
 
 body p {
@@ -73,23 +74,18 @@ body h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: 40px;
   background-color: #EAEAEA;
-  -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8) inset;
-          box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8) inset;
+  -webkit-box-shadow: 0px 20px 60px 2px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0px 20px 60px 2px rgba(0, 0, 0, 0.2) inset;
 }
 
 .recherche .search .search-input {
   background-color: transparent;
   text-align: center;
-  position: relative;
-  width: 10%;
   border: none;
   cursor: pointer;
   border-width: 0px;
@@ -97,9 +93,17 @@ body h2 {
 
 @media screen and (max-width: 539px) {
   .recherche .search .search-input {
-    width: 20%;
     padding-left: 5px;
   }
+}
+
+.recherche .search .search-label {
+  position: relative;
+  left: 20px;
+}
+
+.recherche .search .search-label i {
+  line-height: 40px;
 }
 
 .recherche h2 {
@@ -379,18 +383,28 @@ footer ul .list-footer i {
 }
 
 .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 40px;
+}
+
+.heading h1 {
+  font-size: 1.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 @media screen and (max-width: 539px) {
   .heading {
-    font-size: 1em;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -398,8 +412,11 @@ footer ul .list-footer i {
 }
 
 .heading i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   padding: 0 30px;
-  line-height: 90px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 539px) {
