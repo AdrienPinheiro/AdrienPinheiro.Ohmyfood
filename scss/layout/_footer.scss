@@ -4,8 +4,10 @@ footer{
     height: auto;
     h2{
         font-family: $shrikhand;
-        padding: 10px 20px;
-        margin: 0;
+        padding-left: 20px;
+        padding-top: 15px;
+        font-size: 1.2em;
+        font-weight: normal;
     }
     ul{
         margin: 0;
@@ -23,6 +25,7 @@ footer{
             & i{
                 padding-right: 10px;
                 font-size: 12px;
+                width: 15px;
                 line-height: 19px;
             }
             
