@@ -15,25 +15,32 @@
         flex-direction: row;
         padding: 30px 0;
         justify-content: space-around;
-        @include mobile-only; @include tablette-only{
+        @include mobile-only{
             flex-direction: column;
             align-items: center;
+        }
+        @include tablette-only{
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
 
 .card-restaurants{
     height: auto;
-    width: 200px;
-    border: 1px solid black;
+    width: 300px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     margin: 0 30px;
     @include mobile-only{
-        margin: 15px 0;
-        width: 90%;
+        margin: 5px 0;
+        width: 85%;
         height: 200px;
+    }
+    @include tablette-only{
+        margin-bottom: 30px;
     }
     &.card-restaurants-nouveau{
         &:after{
@@ -51,16 +58,16 @@
         @extend %sansdécoliennoir;
     }
     .card-restaurants-img{
-        height: 100px;
-        width: 200px;
+        height: 150px;
+        width: 300px;
         @include mobile-only{
             height: 150px;
             width: 100%;
         }
         & img{
             object-fit: cover;
-            height: 100px;
-            width: 200px;
+            height: 150px;
+            width: 300px;
             @include mobile-only{
                 height: 150px;
                 width: 100%;

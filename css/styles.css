@@ -16,8 +16,9 @@ footer ul li a {
 .menu .entrees h2:after, .menu .plats h2:after, .menu .desserts h2:after {
   content: '';
   width: 40px;
-  height: 5px;
+  height: 3px;
   display: block;
+  margin-top: 3px;
   background-color: #99E2D0;
 }
 
@@ -108,6 +109,11 @@ body h2 {
 
 .recherche h2 {
   font-weight: bold;
+  padding: 0 20px;
+}
+
+.recherche p {
+  padding: 0 20px;
 }
 
 .fonctionnement {
@@ -137,8 +143,6 @@ body h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 20px 0;
 }
 
@@ -154,15 +158,36 @@ body h2 {
   }
 }
 
+@media screen and (max-width: 1025px) {
+  .fonctionnement .column {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .card-fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin: 20px 10px;
+  width: 33%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .card-fonctionnement {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .card-fonctionnement {
+    width: auto;
+  }
 }
 
 .card-fonctionnement .card-fonctionnement-vio {
@@ -195,6 +220,11 @@ body h2 {
   height: 60px;
   line-height: 60px;
   padding-right: 10px;
+  color: grey;
+}
+
+.card-fonctionnement .card-fonctionnement-border .card-fonctionnement-icon-vio i {
+  color: #9356DC;
 }
 
 .card-fonctionnement .card-fonctionnement-border .card-fonctionnement-text {
@@ -236,7 +266,7 @@ body h2 {
       justify-content: space-around;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 539px) {
   .restaurants .column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -248,10 +278,21 @@ body h2 {
   }
 }
 
+@media screen and (max-width: 1025px) {
+  .restaurants .column {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .card-restaurants {
   height: auto;
-  width: 200px;
-  border: 1px solid black;
+  width: 300px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -260,9 +301,15 @@ body h2 {
 
 @media screen and (max-width: 539px) {
   .card-restaurants {
-    margin: 15px 0;
-    width: 90%;
+    margin: 5px 0;
+    width: 85%;
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .card-restaurants {
+    margin-bottom: 30px;
   }
 }
 
@@ -278,8 +325,8 @@ body h2 {
 }
 
 .card-restaurants .card-restaurants-img {
-  height: 100px;
-  width: 200px;
+  height: 150px;
+  width: 300px;
 }
 
 @media screen and (max-width: 539px) {
@@ -292,8 +339,8 @@ body h2 {
 .card-restaurants .card-restaurants-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100px;
-  width: 200px;
+  height: 150px;
+  width: 300px;
 }
 
 @media screen and (max-width: 539px) {
@@ -371,6 +418,10 @@ footer ul {
   padding: 20px 20px;
 }
 
+footer ul li {
+  margin-bottom: 5px;
+}
+
 footer ul .list-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,8 +429,9 @@ footer ul .list-footer {
 }
 
 footer ul .list-footer i {
-  padding-right: 5px;
-  font-size: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  line-height: 19px;
 }
 
 .heading {
@@ -390,17 +442,14 @@ footer ul .list-footer i {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 40px;
+  height: 50px;
 }
 
 .heading h1 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 @media screen and (max-width: 539px) {
@@ -413,8 +462,8 @@ footer ul .list-footer i {
 
 .heading i {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   padding: 0 30px;
   font-size: 20px;
 }
@@ -431,21 +480,20 @@ footer ul .list-footer i {
 }
 
 .card-presentation .card-presentation-img {
-  height: 150px;
+  height: 200px;
   width: 100%;
 }
 
 .card-presentation .card-presentation-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 200px;
+  height: 250px;
   width: 100%;
 }
 
 .card-presentation .card-presentation-texte {
   height: 50px;
   width: 100%;
-  border-top: 1px solid grey;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   background-color: #F6F6F6;
@@ -454,18 +502,18 @@ footer ul .list-footer i {
 }
 
 .card-presentation .card-presentation-texte .card-presentation-titre {
-  font-style: italic;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.8em;
   padding: 0 20px;
   line-height: 50px;
+  font-family: "Shrikhand", cursive;
 }
 
 .card-presentation .card-presentation-texte .coeur {
   position: absolute;
-  top: 30px;
+  top: 32px;
   right: 25px;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .card-presentation .card-presentation-texte .coeur i:hover {
@@ -475,34 +523,40 @@ footer ul .list-footer i {
 
 .menu {
   background-color: #F6F6F6;
-  padding: 0 15px;
 }
 
 .menu .entrees {
   margin-top: 20px;
+  padding: 0 15px;
 }
 
 .menu .plats {
   margin-top: 20px;
+  padding: 0 15px;
 }
 
 .menu .desserts {
   margin-top: 20px;
+  padding: 0 15px;
 }
 
 .card-menu {
-  height: 50px;
-  margin: 20px 0;
+  height: 60px;
+  margin: 30px 0;
   position: relative;
-  border: 1px solid black;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card-menu .card-menu-titre {
   font-weight: bold;
   font-size: 1em;
   padding-left: 10px;
-  line-height: 0;
+  line-height: 0px;
 }
 
 .card-menu .card-menu-paragraphe {

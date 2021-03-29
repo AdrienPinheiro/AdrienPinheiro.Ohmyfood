@@ -4,11 +4,10 @@
     justify-content: center;
     display: flex;
     position: relative;
-    height: 40px;
+    height: 50px;
     h1{
-        font-size: 1.5em;
+        font-size: 1.8em;
         align-self: center;
-        width: max-content;
     }
     @include mobile-only{
         align-items: center;
@@ -18,8 +17,8 @@
     }
     i{
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 15px;
+        left: 15px;
         padding: 0 30px;
         font-size: 20px;
         @include mobile-only{
@@ -32,35 +31,34 @@
     height: auto;
     width: 100%;
     .card-presentation-img{
-        height: 150px;
+        height: 200px;
         width: 100%;
         & img{
             object-fit: cover;
-            height: 200px;
+            height: 250px;
             width: 100%;
         }
     }
     .card-presentation-texte{
         height: 50px;
         width: 100%;
-        border-top: 1px solid grey;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         background-color: #F6F6F6;
         position: relative;
         padding-top: 20px;
         .card-presentation-titre{
-            font-style: italic;
             font-weight: bold;
-            font-size: 2em;
+            font-size: 1.8em;
             padding: 0 20px;
             line-height: 50px;
+            font-family: $shrikhand;
         }
         .coeur{
             position:absolute;
-            top: 30px;
+            top: 32px;
             right: 25px;
-            font-size: 1.5em;
+            font-size: 1.2em;
             & i:hover { 
                 color: $primaire;
                 font-weight: bold;
@@ -71,29 +69,32 @@
 
 .menu{
     background-color: #F6F6F6;
-    padding: 0 15px;
     .entrees{
         margin-top: 20px;
+        padding: 0 15px;
         @extend %titremenu;        
     }
     
     .plats{
         margin-top: 20px;
+        padding: 0 15px;
         @extend %titremenu;
     }
 
     .desserts{
         margin-top: 20px;
+        padding: 0 15px;
         @extend %titremenu;
     }
 }
 
 .card-menu{
-    height: 50px;
-    margin: 20px 0;
+    height: 60px;
+    margin: 30px 0;
     position: relative;
-    border: 1px solid black;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.15);
     border-radius: 15px;
+    display: flex;
     & a{
         @extend %sansdécoliennoir;
     }
@@ -101,7 +102,7 @@
         font-weight: bold;
         font-size: 1em;
         padding-left: 10px;
-        line-height: 0;
+        line-height: 0px;
     }
     .card-menu-paragraphe{
         font-size: 0.8em;

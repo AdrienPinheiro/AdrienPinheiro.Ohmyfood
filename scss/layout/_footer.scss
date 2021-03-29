@@ -12,14 +12,18 @@ footer{
         list-style: none;
         justify-content: space-between;
         padding: 20px 20px;
+        & li{
+            margin-bottom: 5px;
+        }
         & li a{
             @extend %sansdécolienblanc
         }
         .list-footer{
             display:flex;
             & i{
-                padding-right: 5px;
-                font-size: 10px;
+                padding-right: 10px;
+                font-size: 12px;
+                line-height: 19px;
             }
             
         }

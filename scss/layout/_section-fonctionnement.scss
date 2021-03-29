@@ -12,19 +12,29 @@
     .column{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         padding: 20px 0;
         @include mobile-only {
             flex-direction: column;
             align-items: center;
+        }
+        @include tablette-only{
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
     }
 }
 
 .card-fonctionnement{
     display: flex;
-    flex-direction: row;
     margin: 20px 10px;
+    width: $col4;
+    justify-content: center;
+    @include tablette-only{
+        width: auto;
+    }
+    @include mobile-only{
+        width: auto;
+    }
     .card-fonctionnement-vio{
         background-color: #F5EDFF;
     }
@@ -48,6 +58,10 @@
             height: 60px;
             line-height: 60px;
             padding-right: 10px;
+            color: grey;
+        }
+        .card-fonctionnement-icon-vio i{
+            color: $primaire;
         }
         .card-fonctionnement-text{
             height: 60px;
