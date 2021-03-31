@@ -16,7 +16,8 @@
         "../scss/layout/_section-restaurants.scss",
         "../scss/composants/_btn.scss",
         "../scss/layout/_footer.scss",
-        "../scss/pages/_commandepage.scss"
+        "../scss/pages/_commandepage.scss",
+        "../scss/pages/animation-loading.scss"
     ],
     "names": [],
     "file": "styles.css"
