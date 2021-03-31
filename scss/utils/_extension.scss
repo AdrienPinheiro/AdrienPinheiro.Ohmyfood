@@ -29,3 +29,23 @@
         }
     }
 }
+
+@keyframes menu-effect{
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes validation{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.99);
+    }
+}

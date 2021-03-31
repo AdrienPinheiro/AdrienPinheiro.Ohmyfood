@@ -22,6 +22,54 @@ footer ul li a {
   background-color: #99E2D0;
 }
 
+@-webkit-keyframes menu-effect {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-effect {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes validation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+}
+
+@keyframes validation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+  }
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url(../../Police/Roboto/Roboto-Regular.ttf);
@@ -56,6 +104,7 @@ body {
 
 body p {
   font-family: "Roboto", cursive;
+  margin: 0;
 }
 
 body h1 {
@@ -63,6 +112,10 @@ body h1 {
 }
 
 body h2 {
+  margin: 0;
+}
+
+body h3 {
   margin: 0;
 }
 
@@ -531,16 +584,22 @@ footer ul .list-footer i {
 .menu .entrees {
   margin-top: 20px;
   padding: 0 15px;
+  -webkit-animation: menu-effect 0.5s;
+          animation: menu-effect 0.5s;
 }
 
 .menu .plats {
   margin-top: 20px;
   padding: 0 15px;
+  -webkit-animation: menu-effect 2s;
+          animation: menu-effect 2s;
 }
 
 .menu .desserts {
   margin-top: 20px;
   padding: 0 15px;
+  -webkit-animation: menu-effect 3.5s;
+          animation: menu-effect 3.5s;
 }
 
 .card-menu {
@@ -558,19 +617,20 @@ footer ul .list-footer i {
 .card-menu .card-menu-titre {
   font-weight: bold;
   font-size: 1em;
-  padding-left: 10px;
-  line-height: 0px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .card-menu .card-menu-paragraphe {
   font-size: 0.8em;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 .card-menu .card-menu-prix {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 15px;
 }
 
 .commande {

@@ -72,19 +72,22 @@
     .entrees{
         margin-top: 20px;
         padding: 0 15px;
-        @extend %titremenu;        
+        @extend %titremenu; 
+        animation: menu-effect 0.5s;       
     }
     
     .plats{
         margin-top: 20px;
         padding: 0 15px;
         @extend %titremenu;
+        animation: menu-effect 2s;
     }
 
     .desserts{
         margin-top: 20px;
         padding: 0 15px;
         @extend %titremenu;
+        animation: menu-effect 3.5s;
     }
 }
 
@@ -95,23 +98,27 @@
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.15);
     border-radius: 15px;
     display: flex;
+    //& :hover{
+    //    animation: validation 3s ease-in 1s 2 reverse both;
+    //}
     & a{
         @extend %sansdécoliennoir;
     }
     .card-menu-titre{
         font-weight: bold;
         font-size: 1em;
-        padding-left: 10px;
-        line-height: 0px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .card-menu-paragraphe{
         font-size: 0.8em;
-        padding-left: 10px;
+        padding-left: 15px;
     }
     .card-menu-prix{
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 30px;
+        right: 15px;
     }
 }
 
