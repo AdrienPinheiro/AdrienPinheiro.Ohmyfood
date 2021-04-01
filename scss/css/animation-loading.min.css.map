@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../pages/animation-loading.scss"
-    ],
-    "names": [],
-    "file": "animation-loading.min.css"
-}

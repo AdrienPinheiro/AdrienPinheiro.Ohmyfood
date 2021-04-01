@@ -3,6 +3,7 @@
 @import 'utils/mixin';
 @import 'utils/extension';
 @import 'base/police';
+@import 'pages/animation-loading';
 @import 'layout/header';
 @import 'layout/body';
 @import 'layout/section-recherche';
@@ -11,7 +12,6 @@
 @import 'composants/btn';
 @import 'layout/footer';
 @import 'pages/commandepage';
-@import 'pages/animation-loading';
 
 // On peut faire des calculs
 

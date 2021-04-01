@@ -80,6 +80,300 @@ footer ul li a {
   src: url(../../Police/Shrikhand/Shrikhand-Regular.ttf);
 }
 
+.chargement {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  opacity: 1;
+  z-index: 1;
+  -webkit-animation: loader 3s linear forwards;
+          animation: loader 3s linear forwards;
+}
+
+.chargement .chargement-animation {
+  position: absolute;
+  opacity: 1;
+  top: 40%;
+  left: 45%;
+}
+
+.chargement .chargement-animation .chargement-cercle-primaire {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border: 5px solid white;
+  border-top: 5px solid #9356DC;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  -webkit-animation: chargeur 2s linear infinite;
+          animation: chargeur 2s linear infinite;
+}
+
+.chargement .chargement-animation .chargement-cercle-secondaire {
+  position: absolute;
+  top: 12.5px;
+  left: 12.5px;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border: 5px solid white;
+  border-left: 5px solid #FF79DA;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  animation: chargeur-secondaire 1s linear infinite reverse;
+}
+
+.chargement .chargement-animation .chargement-cercle-terciaire {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border: 5px solid white;
+  border-bottom: 5px solid #99E2D0;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  animation: chargeur-terciaire 1s linear infinite reverse;
+}
+
+.chargement .chargement-animation .chargement-icone {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5em;
+  -webkit-animation: fork 1s infinite;
+          animation: fork 1s infinite;
+}
+
+@-webkit-keyframes chargeur {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-top-color: #9356DC;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-top-color: #f2f2f2;
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes chargeur {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-top-color: #9356DC;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-top-color: #f2f2f2;
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes chargeur-secondaire {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-left-color: #FF79DA;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-left-color: #f2f2f2;
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes chargeur-secondaire {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-left-color: #FF79DA;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-left-color: #f2f2f2;
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes chargeur-terciaire {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-left-color: #99E2D0;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-left-color: #f2f2f2;
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes chargeur-terciaire {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-left-color: #99E2D0;
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-left-color: #f2f2f2;
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes fork {
+  0% {
+    font-size: 1.5em;
+  }
+  50% {
+    font-size: 2em;
+    top: 70px;
+    left: 70px;
+  }
+  100% {
+    font-size: 1.5em;
+  }
+}
+
+@keyframes fork {
+  0% {
+    font-size: 1.5em;
+  }
+  50% {
+    font-size: 2em;
+    top: 70px;
+    left: 70px;
+  }
+  100% {
+    font-size: 1.5em;
+  }
+}
+
 header {
   font-family: "Shrikhand", cursive;
 }
