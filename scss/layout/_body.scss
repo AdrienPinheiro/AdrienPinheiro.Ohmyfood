@@ -8,6 +8,7 @@ body{
         margin: 0;
     }
     h1{
+        font-family: $shrikhand;
         margin: 0;
     }
     h2{
@@ -16,15 +17,7 @@ body{
     h3{
         margin: 0;
     }
+    span{
+        font-family: $roboto;
+    }
 }
-
-
-
-//@each $nom, $breakpoint in $grille {  // Boucles avec Media Queries ! La grille est dans les variables.
-//    @media screen and (min-width: $breakpoint) {
-//        body{
-//            width: 80%;
-//            margin:0;
-//        }        
-//    }    
-//}

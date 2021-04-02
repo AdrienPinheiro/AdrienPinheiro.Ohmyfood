@@ -3,7 +3,7 @@ footer ul li a {
   text-decoration: none;
 }
 
-.card-restaurants a, .heading a, .card-menu a {
+.restaurants .column a, .heading a, .card-menu a {
   color: #000000;
   text-decoration: none;
 }
@@ -99,6 +99,24 @@ footer ul li a {
   opacity: 1;
   top: 40%;
   left: 45%;
+}
+
+@media screen and (max-width: 1025px) {
+  .chargement .chargement-animation {
+    position: absolute;
+    opacity: 1;
+    top: 30%;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .chargement .chargement-animation {
+    position: absolute;
+    opacity: 1;
+    top: 30%;
+    left: 30%;
+  }
 }
 
 .chargement .chargement-animation .chargement-cercle-primaire {
@@ -480,6 +498,7 @@ body p {
 }
 
 body h1 {
+  font-family: "Shrikhand", cursive;
   margin: 0;
 }
 
@@ -489,6 +508,10 @@ body h2 {
 
 body h3 {
   margin: 0;
+}
+
+body span {
+  font-family: "Roboto", cursive;
 }
 
 .recherche {
@@ -534,11 +557,20 @@ body h3 {
 
 .recherche h2 {
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 80px;
+  font-size: 1.2em;
+  line-height: 25px;
+  margin-top: 25px;
 }
 
 .recherche p {
-  padding: 0 20px;
+  padding: 0 40px;
+  color: #4b4b4b;
+  margin: 15px 0;
+}
+
+.recherche .search-submit {
+  margin-bottom: 50px;
 }
 
 .fonctionnement {
@@ -615,10 +647,6 @@ body h3 {
   }
 }
 
-.card-fonctionnement .card-fonctionnement-vio {
-  background-color: #F5EDFF;
-}
-
 .card-fonctionnement .card-fonctionnement-border {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,6 +684,10 @@ body h3 {
   height: 60px;
   line-height: 60px;
   padding-right: 50px;
+}
+
+.card-fonctionnement .card-fonctionnement-border-vio {
+  background-color: #F5EDFF;
 }
 
 .restaurants {
@@ -802,11 +834,11 @@ body h3 {
 
 .search-submit {
   height: 40px;
-  font-size: 16px;
+  font-size: 15px;
   color: white;
   border-radius: 20px;
   border: none;
-  padding: 0 20px;
+  padding: 0 15px;
   margin-top: 10px;
   margin-bottom: 30px;
   background: linear-gradient(146deg, #ff79da 0%, #ff79da 9%, #bd63db 43%, #9356dc 65%);
@@ -1031,5 +1063,7 @@ footer ul .list-footer i {
 
 .commande .search-submit {
   padding: 0 40px;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=styles.css.map */
