@@ -403,69 +403,7 @@ footer ul li a {
 }
 
 .card-menu:hover .card-menu-prix {
-  right: 70px;
-}
-
-@-webkit-keyframes prix {
-  from {
-    right: 15px;
-  }
-  to {
-    right: 70px;
-  }
-}
-
-@keyframes prix {
-  from {
-    right: 15px;
-  }
-  to {
-    right: 70px;
-  }
-}
-
-@-webkit-keyframes fond {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 60px;
-  }
-}
-
-@keyframes fond {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 60px;
-  }
-}
-
-@-webkit-keyframes plop3 {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    right: 0px;
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    right: 20px;
-  }
-}
-
-@keyframes plop3 {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    right: 0px;
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    right: 20px;
-  }
+  right: 45px;
 }
 
 header {
@@ -1011,10 +949,38 @@ footer ul .list-footer i {
   -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-menu .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 35px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+.card-menu .row .card-menu-paragraphe {
+  font-size: 0.8em;
+  padding-left: 15px;
+  padding-bottom: 5px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card-menu .row .card-menu-prix {
+  -webkit-transition: all 1s ease-out 100ms;
+  transition: all 1s ease-out 100ms;
+  padding-right: 10px;
 }
 
 .card-menu .card-menu-animation {
@@ -1048,22 +1014,9 @@ footer ul .list-footer i {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.card-menu .card-menu-paragraphe {
-  font-size: 0.8em;
-  padding-left: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.card-menu .card-menu-prix {
   position: absolute;
-  top: 30px;
-  right: 15px;
-  -webkit-transition: all 1s ease-out 100ms;
-  transition: all 1s ease-out 100ms;
+  top: 0px;
+  left: 5px;
 }
 
 .commande {

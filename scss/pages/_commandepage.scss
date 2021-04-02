@@ -97,8 +97,29 @@
     position: relative;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.15);
     border-radius: 15px;
-    display: flex;
     overflow: hidden;
+    .row{
+        flex-direction: row;
+        display: flex;
+        padding-top: 35px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+        .card-menu-paragraphe{
+            font-size: 0.8em;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            align-self: flex-end;
+        }
+        .card-menu-prix{
+            transition: all 1s ease-out 100ms;
+            padding-right: 10px;
+        }
+    }
+    
     .card-menu-animation{
         position: absolute;
         height: 60px;
@@ -115,7 +136,6 @@
             right: -25px;
             font-size: 1.3em;
             color: #f6f6f6;
-           // display: none; 
             transform: rotate(0deg);
             transition: all 1s ease-out 100ms;        
         }
@@ -129,19 +149,9 @@
         padding-left: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-    .card-menu-paragraphe{
-        font-size: 0.8em;
-        padding-left: 15px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-    .card-menu-prix{
         position: absolute;
-        top: 30px;
-        right: 15px;
-        transition: all 1s ease-out 100ms;
+        top: 0px;
+        left: 5px;
     }
 }
 
