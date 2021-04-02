@@ -72,12 +72,12 @@ footer ul li a {
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../../Police/Roboto/Roboto-Regular.ttf);
+  src: url("../../Police/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Shrikhand';
-  src: url(../../Police/Shrikhand/Shrikhand-Regular.ttf);
+  src: url("../../Police/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 .chargement {
@@ -370,8 +370,8 @@ footer ul li a {
   }
   50% {
     font-size: 2em;
-    top: 70px;
-    left: 70px;
+    top: 65px;
+    left: 65px;
   }
   100% {
     font-size: 1.5em;
@@ -384,8 +384,8 @@ footer ul li a {
   }
   50% {
     font-size: 2em;
-    top: 70px;
-    left: 70px;
+    top: 65px;
+    left: 65px;
   }
   100% {
     font-size: 1.5em;
