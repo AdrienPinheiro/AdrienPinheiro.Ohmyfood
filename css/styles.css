@@ -72,12 +72,12 @@ footer ul li a {
 
 @font-face {
   font-family: 'Roboto';
-  src: url("./../../Police/Roboto/Roboto-Regular.ttf");
+  src: url("../Police/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Shrikhand';
-  src: url("./../../Police/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../Police/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 .chargement {
