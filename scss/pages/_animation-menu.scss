@@ -1,17 +1,23 @@
 .card-menu:hover{
     .card-menu-animation{
-    animation: plop2 0.5s linear forwards;
+ //   animation: fond 0.5s linear forwards;
+ //   animation-fill-mode: both;
+    
+    width: 60px;
     & i{
-        display: block;
-        animation: plop3  0.5s linear forwards;
+        //display: block;
+        //animation: plop3  0.5s linear forwards;
+        transform: rotate(360deg);
+        right: 20px;
     }
 }
     .card-menu-prix{
-    animation: plop 0.5s linear forwards;
+    //animation: prix 0.5s linear forwards;
+    right: 70px;
     }
 }
 
-@keyframes plop{
+@keyframes prix{
     from{
         right: 15px;
     }
@@ -20,11 +26,11 @@
     }
 }
 
-@keyframes plop2{
-    from{
+@keyframes fond{
+    0%{
         width: 0px;
     }
-    to{
+    100%{
         width: 60px;
     }
 }

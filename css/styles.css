@@ -72,12 +72,12 @@ footer ul li a {
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../../Police/Roboto/Roboto-Regular.ttf");
+  src: url("./../../Police/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Shrikhand';
-  src: url("../../Police/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("./../../Police/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 .chargement {
@@ -333,8 +333,8 @@ footer ul li a {
   50% {
     opacity: 1;
   }
-  75% {
-    opacity: 0.8;
+  95% {
+    opacity: 0.97;
   }
   99% {
     z-index: 1;
@@ -352,8 +352,8 @@ footer ul li a {
   50% {
     opacity: 1;
   }
-  75% {
-    opacity: 0.8;
+  95% {
+    opacity: 0.97;
   }
   99% {
     z-index: 1;
@@ -393,22 +393,20 @@ footer ul li a {
 }
 
 .card-menu:hover .card-menu-animation {
-  -webkit-animation: plop2 0.5s linear forwards;
-          animation: plop2 0.5s linear forwards;
+  width: 60px;
 }
 
 .card-menu:hover .card-menu-animation i {
-  display: block;
-  -webkit-animation: plop3  0.5s linear forwards;
-          animation: plop3  0.5s linear forwards;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  right: 20px;
 }
 
 .card-menu:hover .card-menu-prix {
-  -webkit-animation: plop 0.5s linear forwards;
-          animation: plop 0.5s linear forwards;
+  right: 70px;
 }
 
-@-webkit-keyframes plop {
+@-webkit-keyframes prix {
   from {
     right: 15px;
   }
@@ -417,7 +415,7 @@ footer ul li a {
   }
 }
 
-@keyframes plop {
+@keyframes prix {
   from {
     right: 15px;
   }
@@ -426,20 +424,20 @@ footer ul li a {
   }
 }
 
-@-webkit-keyframes plop2 {
-  from {
+@-webkit-keyframes fond {
+  0% {
     width: 0px;
   }
-  to {
+  100% {
     width: 60px;
   }
 }
 
-@keyframes plop2 {
-  from {
+@keyframes fond {
+  0% {
     width: 0px;
   }
-  to {
+  100% {
     width: 60px;
   }
 }
@@ -1016,6 +1014,7 @@ footer ul .list-footer i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .card-menu .card-menu-animation {
@@ -1027,15 +1026,20 @@ footer ul .list-footer i {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  -webkit-transition: all 1s ease-out 100ms;
+  transition: all 1s ease-out 100ms;
 }
 
 .card-menu .card-menu-animation i {
   position: absolute;
   top: 18px;
-  right: 0px;
+  right: -25px;
   font-size: 1.3em;
   color: #f6f6f6;
-  display: none;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 1s ease-out 100ms;
+  transition: all 1s ease-out 100ms;
 }
 
 .card-menu .card-menu-titre {
@@ -1049,12 +1053,17 @@ footer ul .list-footer i {
 .card-menu .card-menu-paragraphe {
   font-size: 0.8em;
   padding-left: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card-menu .card-menu-prix {
   position: absolute;
   top: 30px;
   right: 15px;
+  -webkit-transition: all 1s ease-out 100ms;
+  transition: all 1s ease-out 100ms;
 }
 
 .commande {
