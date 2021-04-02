@@ -98,9 +98,24 @@
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.15);
     border-radius: 15px;
     display: flex;
-    //& :hover{
-    //    animation: validation 3s ease-in 1s 2 reverse both;
-    //}
+    .card-menu-animation{
+        position: absolute;
+        height: 60px;
+        width: 0px;
+        top: 0px;
+        right: 0px;
+        background-color: $terciaire;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        & i{
+            position: absolute;
+            top: 18px;
+            right: 0px;
+            font-size: 1.3em;
+            color: #f6f6f6;
+            display: none;            
+        }
+    }
     & a{
         @extend %sansdécoliennoir;
     }

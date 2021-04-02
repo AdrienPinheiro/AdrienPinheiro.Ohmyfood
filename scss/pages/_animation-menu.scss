@@ -1,0 +1,42 @@
+.card-menu:hover{
+    .card-menu-animation{
+    animation: plop2 0.5s linear forwards;
+    & i{
+        display: block;
+        animation: plop3  0.5s linear forwards;
+    }
+}
+    .card-menu-prix{
+    animation: plop 0.5s linear forwards;
+    }
+}
+
+@keyframes plop{
+    from{
+        right: 15px;
+    }
+    to{
+        right: 70px;
+    }
+}
+
+@keyframes plop2{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 60px;
+    }
+}
+
+@keyframes plop3{
+    from{
+        transform: rotate(0deg);
+        right: 0px;
+    }
+    to{
+        transform: rotate(360deg);
+        right: 20px;
+    }
+}
+

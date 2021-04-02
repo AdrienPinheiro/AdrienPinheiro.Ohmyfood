@@ -374,6 +374,84 @@ footer ul li a {
   }
 }
 
+.card-menu:hover .card-menu-animation {
+  -webkit-animation: plop2 0.5s linear forwards;
+          animation: plop2 0.5s linear forwards;
+}
+
+.card-menu:hover .card-menu-animation i {
+  display: block;
+  -webkit-animation: plop3  0.5s linear forwards;
+          animation: plop3  0.5s linear forwards;
+}
+
+.card-menu:hover .card-menu-prix {
+  -webkit-animation: plop 0.5s linear forwards;
+          animation: plop 0.5s linear forwards;
+}
+
+@-webkit-keyframes plop {
+  from {
+    right: 15px;
+  }
+  to {
+    right: 70px;
+  }
+}
+
+@keyframes plop {
+  from {
+    right: 15px;
+  }
+  to {
+    right: 70px;
+  }
+}
+
+@-webkit-keyframes plop2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+@keyframes plop2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+@-webkit-keyframes plop3 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    right: 0px;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    right: 20px;
+  }
+}
+
+@keyframes plop3 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    right: 0px;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    right: 20px;
+  }
+}
+
 header {
   font-family: "Shrikhand", cursive;
 }
@@ -906,6 +984,26 @@ footer ul .list-footer i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.card-menu .card-menu-animation {
+  position: absolute;
+  height: 60px;
+  width: 0px;
+  top: 0px;
+  right: 0px;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-menu .card-menu-animation i {
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  font-size: 1.3em;
+  color: #f6f6f6;
+  display: none;
 }
 
 .card-menu .card-menu-titre {
