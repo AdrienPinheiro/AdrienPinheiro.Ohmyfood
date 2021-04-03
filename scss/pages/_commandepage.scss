@@ -101,7 +101,6 @@
     .row{
         flex-direction: row;
         display: flex;
-        padding-top: 35px;
         padding-left: 5px;
         margin-bottom: 5px;
         .card-menu-paragraphe{
@@ -117,28 +116,29 @@
         .card-menu-prix{
             transition: all 1s ease-out 100ms;
             padding-right: 10px;
+            padding-top: 36px;
         }
-    }
-    
-    .card-menu-animation{
-        position: absolute;
-        height: 60px;
-        width: 0px;
-        top: 0px;
-        right: 0px;
-        background-color: $terciaire;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        transition: all 1s ease-out 100ms;
-        & i{
-            position: absolute;
-            top: 18px;
-            right: -25px;
-            font-size: 1.3em;
-            color: #f6f6f6;
-            transform: rotate(0deg);
-            transition: all 1s ease-out 100ms;        
-        }
+
+        .card-menu-animation{
+            height: 60px;
+            width: 0px;
+            top: 0px;
+            right: 0px;
+            background-color: $terciaire;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            transition: all 1s ease-out 100ms;
+            position: relative;
+            & i{
+                position: absolute;
+                top: 18px;
+                right: -25px;
+                font-size: 1.3em;
+                color: #f6f6f6;
+                transform: rotate(0deg);
+                transition: all 1s ease-out 100ms;        
+            }
+        }       
     }
     & a{
         @extend %sansdécoliennoir;

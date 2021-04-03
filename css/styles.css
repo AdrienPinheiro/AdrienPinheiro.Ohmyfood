@@ -392,14 +392,14 @@ footer ul li a {
   }
 }
 
-.card-menu:hover .card-menu-animation {
+.card-menu:hover .row .card-menu-animation {
   width: 60px;
 }
 
-.card-menu:hover .card-menu-animation i {
+.card-menu:hover .row .card-menu-animation i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  right: 20px;
+  right: 12px;
 }
 
 .card-menu:hover .card-menu-prix {
@@ -960,7 +960,6 @@ footer ul .list-footer i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 35px;
   padding-left: 5px;
   margin-bottom: 5px;
 }
@@ -981,10 +980,10 @@ footer ul .list-footer i {
   -webkit-transition: all 1s ease-out 100ms;
   transition: all 1s ease-out 100ms;
   padding-right: 10px;
+  padding-top: 36px;
 }
 
-.card-menu .card-menu-animation {
-  position: absolute;
+.card-menu .row .card-menu-animation {
   height: 60px;
   width: 0px;
   top: 0px;
@@ -994,9 +993,10 @@ footer ul .list-footer i {
   border-bottom-right-radius: 15px;
   -webkit-transition: all 1s ease-out 100ms;
   transition: all 1s ease-out 100ms;
+  position: relative;
 }
 
-.card-menu .card-menu-animation i {
+.card-menu .row .card-menu-animation i {
   position: absolute;
   top: 18px;
   right: -25px;

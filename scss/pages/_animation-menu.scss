@@ -1,11 +1,13 @@
 .card-menu:hover{
-    .card-menu-animation{
-    width: 60px;
-    & i{
-        transform: rotate(360deg);
-        right: 20px;
+    .row{
+        .card-menu-animation{
+            width: 60px;
+            & i{
+                transform: rotate(360deg);
+                right: 12px;
+            }
+        }
     }
-}
     .card-menu-prix{
         right: 45px;
     }
