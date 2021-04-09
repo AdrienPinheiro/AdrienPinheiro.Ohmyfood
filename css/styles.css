@@ -8,12 +8,12 @@ footer ul li a {
   text-decoration: none;
 }
 
-.menu .entrees h2, .menu .plats h2, .menu .desserts h2 {
+.menu .entry h2, .menu .dishes h2, .menu .desserts h2 {
   font-weight: normal;
   font-size: 1em;
 }
 
-.menu .entrees h2:after, .menu .plats h2:after, .menu .desserts h2:after {
+.menu .entry h2:after, .menu .dishes h2:after, .menu .desserts h2:after {
   content: '';
   width: 40px;
   height: 3px;
@@ -80,7 +80,7 @@ footer ul li a {
   src: url("../Police/Shrikhand/Shrikhand-Regular.ttf");
 }
 
-.chargement {
+.loading {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -94,7 +94,7 @@ footer ul li a {
           animation: loader 3s linear forwards;
 }
 
-.chargement .chargement-animation {
+.loading .loading-animation {
   position: absolute;
   opacity: 1;
   top: 40%;
@@ -102,7 +102,7 @@ footer ul li a {
 }
 
 @media screen and (max-width: 1025px) {
-  .chargement .chargement-animation {
+  .loading .loading-animation {
     position: absolute;
     opacity: 1;
     top: 30%;
@@ -111,7 +111,7 @@ footer ul li a {
 }
 
 @media screen and (max-width: 539px) {
-  .chargement .chargement-animation {
+  .loading .loading-animation {
     position: absolute;
     opacity: 1;
     top: 30%;
@@ -119,7 +119,7 @@ footer ul li a {
   }
 }
 
-.chargement .chargement-animation .chargement-cercle-primaire {
+.loading .loading-animation .loading-circle-primary {
   position: absolute;
   top: 0;
   left: 0;
@@ -131,11 +131,11 @@ footer ul li a {
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  -webkit-animation: chargeur 2s linear infinite;
-          animation: chargeur 2s linear infinite;
+  -webkit-animation: charge 2s linear infinite;
+          animation: charge 2s linear infinite;
 }
 
-.chargement .chargement-animation .chargement-cercle-secondaire {
+.loading .loading-animation .loading-circle-secondary {
   position: absolute;
   top: 12.5px;
   left: 12.5px;
@@ -147,10 +147,10 @@ footer ul li a {
   border-radius: 50%;
   height: 125px;
   width: 125px;
-  animation: chargeur-secondaire 1s linear infinite reverse;
+  animation: charge-secondary 1s linear infinite reverse;
 }
 
-.chargement .chargement-animation .chargement-cercle-terciaire {
+.loading .loading-animation .loading-circle-tertiary {
   position: absolute;
   top: 25px;
   left: 25px;
@@ -162,10 +162,10 @@ footer ul li a {
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  animation: chargeur-terciaire 1s linear infinite reverse;
+  animation: charge-tertiary 1s linear infinite reverse;
 }
 
-.chargement .chargement-animation .chargement-icone {
+.loading .loading-animation .loading-icon {
   position: absolute;
   top: 75px;
   left: 75px;
@@ -176,7 +176,7 @@ footer ul li a {
           animation: fork 1s infinite;
 }
 
-@-webkit-keyframes chargeur {
+@-webkit-keyframes charge {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -201,7 +201,7 @@ footer ul li a {
   }
 }
 
-@keyframes chargeur {
+@keyframes charge {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -226,7 +226,7 @@ footer ul li a {
   }
 }
 
-@-webkit-keyframes chargeur-secondaire {
+@-webkit-keyframes charge-secondary {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -251,7 +251,7 @@ footer ul li a {
   }
 }
 
-@keyframes chargeur-secondaire {
+@keyframes charge-secondary {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -276,7 +276,7 @@ footer ul li a {
   }
 }
 
-@-webkit-keyframes chargeur-terciaire {
+@-webkit-keyframes charge-tertiary {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -301,7 +301,7 @@ footer ul li a {
   }
 }
 
-@keyframes chargeur-terciaire {
+@keyframes charge-tertiary {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -450,12 +450,12 @@ body span {
   font-family: "Roboto", cursive;
 }
 
-.recherche {
+.research {
   text-align: center;
   background-color: #F6F6F6;
 }
 
-.recherche .search {
+.research .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,11 +464,11 @@ body span {
           justify-content: center;
   height: 40px;
   background-color: #EAEAEA;
-  -webkit-box-shadow: 0px 20px 60px 2px rgba(0, 0, 0, 0.2) inset;
-          box-shadow: 0px 20px 60px 2px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
-.recherche .search .search-input {
+.research .search .search-input {
   background-color: transparent;
   text-align: center;
   border: none;
@@ -477,21 +477,21 @@ body span {
 }
 
 @media screen and (max-width: 539px) {
-  .recherche .search .search-input {
+  .research .search .search-input {
     padding-left: 5px;
   }
 }
 
-.recherche .search .search-label {
+.research .search .search-label {
   position: relative;
   left: 20px;
 }
 
-.recherche .search .search-label i {
+.research .search .search-label i {
   line-height: 40px;
 }
 
-.recherche h2 {
+.research h2 {
   font-weight: bold;
   padding: 0 80px;
   font-size: 1.2em;
@@ -499,36 +499,36 @@ body span {
   margin-top: 25px;
 }
 
-.recherche p {
+.research p {
   padding: 0 40px;
   color: #4b4b4b;
   margin: 15px 0;
 }
 
-.recherche .search-submit {
+.research .search-submit {
   margin-bottom: 50px;
 }
 
-.fonctionnement {
+.operation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.fonctionnement h2 {
+.operation h2 {
   text-align: center;
   padding: 20px 0;
 }
 
 @media screen and (max-width: 539px) {
-  .fonctionnement h2 {
+  .operation h2 {
     text-align: start;
     padding-top: 30px;
     padding-left: 30px;
   }
 }
 
-.fonctionnement .column {
+.operation .column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,7 +540,7 @@ body span {
 }
 
 @media screen and (max-width: 539px) {
-  .fonctionnement .column {
+  .operation .column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -552,7 +552,7 @@ body span {
 }
 
 @media screen and (max-width: 1025px) {
-  .fonctionnement .column {
+  .operation .column {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
@@ -560,7 +560,7 @@ body span {
   }
 }
 
-.card-fonctionnement {
+.card-operation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,18 +572,26 @@ body span {
 }
 
 @media screen and (max-width: 1025px) {
-  .card-fonctionnement {
+  .card-operation {
     width: auto;
   }
 }
 
 @media screen and (max-width: 539px) {
-  .card-fonctionnement {
+  .card-operation {
     width: auto;
   }
 }
 
-.card-fonctionnement .card-fonctionnement-border {
+.card-operation :hover.card-operation-border:hover {
+  background: #F5EDFF;
+}
+
+.card-operation :hover.card-operation-border:hover .card-operation-icon i {
+  color: #9356DC;
+}
+
+.card-operation .card-operation-border {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,7 +601,7 @@ body span {
   background-color: #F6F6F6;
 }
 
-.card-fonctionnement .card-fonctionnement-border .card-fonctionnement-number {
+.card-operation .card-operation-border .card-operation-number {
   background-color: #9356DC;
   height: 20px;
   width: 20px;
@@ -605,25 +613,17 @@ body span {
   left: -10px;
 }
 
-.card-fonctionnement .card-fonctionnement-border .card-fonctionnement-icon i {
+.card-operation .card-operation-border .card-operation-icon i {
   height: 60px;
   line-height: 60px;
   padding-right: 10px;
   color: grey;
 }
 
-.card-fonctionnement .card-fonctionnement-border .card-fonctionnement-icon-vio i {
-  color: #9356DC;
-}
-
-.card-fonctionnement .card-fonctionnement-border .card-fonctionnement-text {
+.card-operation .card-operation-border .card-operation-text {
   height: 60px;
   line-height: 60px;
   padding-right: 50px;
-}
-
-.card-fonctionnement .card-fonctionnement-border-vio {
-  background-color: #F5EDFF;
 }
 
 .restaurants {
@@ -684,8 +684,9 @@ body span {
 .card-restaurants {
   height: auto;
   width: 300px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 9px 30px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -2px 9px 30px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -2px 9px 30px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -706,7 +707,7 @@ body span {
   }
 }
 
-.card-restaurants.card-restaurants-nouveau:after {
+.card-restaurants.card-restaurants-new:after {
   content: 'Nouveau';
   font-size: small;
   padding: 5px 10px;
@@ -743,27 +744,27 @@ body span {
   }
 }
 
-.card-restaurants .card-restaurants-texte {
+.card-restaurants .card-restaurants-text {
   height: auto;
   position: relative;
   padding: 5px 10px;
 }
 
-.card-restaurants .card-restaurants-texte .card-restaurants-titre {
+.card-restaurants .card-restaurants-text .card-restaurants-title {
   font-weight: bold;
 }
 
-.card-restaurants .card-restaurants-texte .card-restaurants-paragraphe {
+.card-restaurants .card-restaurants-text .card-restaurants-paragraph {
   font-size: 15px;
 }
 
-.card-restaurants .card-restaurants-texte .coeur {
+.card-restaurants .card-restaurants-text .heart {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-.card-restaurants .card-restaurants-texte .coeur i:hover {
+.card-restaurants .card-restaurants-text .heart i:hover {
   color: #9356DC;
   font-weight: bold;
 }
@@ -839,6 +840,7 @@ footer ul .list-footer i {
   display: flex;
   position: relative;
   height: 50px;
+  background: #F6F6F6;
 }
 
 .heading h1 {
@@ -887,17 +889,17 @@ footer ul .list-footer i {
   width: 100%;
 }
 
-.card-presentation .card-presentation-texte {
+.card-presentation .card-presentation-text {
   height: 50px;
   width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   background-color: #F6F6F6;
   position: relative;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
-.card-presentation .card-presentation-texte .card-presentation-titre {
+.card-presentation .card-presentation-text .card-presentation-title {
   font-weight: bold;
   font-size: 1.8em;
   padding: 0 20px;
@@ -905,14 +907,14 @@ footer ul .list-footer i {
   font-family: "Shrikhand", cursive;
 }
 
-.card-presentation .card-presentation-texte .coeur {
+.card-presentation .card-presentation-text .heart {
   position: absolute;
   top: 32px;
   right: 25px;
   font-size: 1.2em;
 }
 
-.card-presentation .card-presentation-texte .coeur i:hover {
+.card-presentation .card-presentation-text .heart i:hover {
   color: #9356DC;
   font-weight: bold;
 }
@@ -921,22 +923,21 @@ footer ul .list-footer i {
   background-color: #F6F6F6;
 }
 
-.menu .entrees {
-  margin-top: 20px;
+.menu .entry {
   padding: 0 15px;
   -webkit-animation: menu-effect 0.5s;
           animation: menu-effect 0.5s;
 }
 
-.menu .plats {
-  margin-top: 20px;
+.menu .dishes {
+  margin-top: 30px;
   padding: 0 15px;
   -webkit-animation: menu-effect 2s;
           animation: menu-effect 2s;
 }
 
 .menu .desserts {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 0 15px;
   -webkit-animation: menu-effect 3.5s;
           animation: menu-effect 3.5s;
@@ -946,10 +947,12 @@ footer ul .list-footer i {
   height: 60px;
   margin: 30px 0;
   position: relative;
-  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: -2px 9px 20px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -2px 9px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -2px 9px 20px 0px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   overflow: hidden;
+  background: #FFFFFF;
 }
 
 .card-menu .row {
@@ -964,9 +967,9 @@ footer ul .list-footer i {
   margin-bottom: 5px;
 }
 
-.card-menu .row .card-menu-paragraphe {
+.card-menu .row .card-menu-paragraph {
   font-size: 0.8em;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-bottom: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -976,7 +979,7 @@ footer ul .list-footer i {
       align-self: flex-end;
 }
 
-.card-menu .row .card-menu-prix {
+.card-menu .row .card-menu-price {
   -webkit-transition: all 1s ease-out 100ms;
   transition: all 1s ease-out 100ms;
   padding-right: 10px;
@@ -1008,10 +1011,10 @@ footer ul .list-footer i {
   transition: all 1s ease-out 100ms;
 }
 
-.card-menu .card-menu-titre {
+.card-menu .card-menu-title {
   font-weight: bold;
   font-size: 1em;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   position: absolute;
@@ -1019,11 +1022,11 @@ footer ul .list-footer i {
   left: 5px;
 }
 
-.commande {
+.order {
   text-align: center;
 }
 
-.commande .search-submit {
+.order .search-submit {
   padding: 0 40px;
   margin-top: 20px;
   margin-bottom: 80px;

@@ -1,4 +1,4 @@
-.fonctionnement{
+.operation{
     justify-content: center;
     h2{
         text-align: center;
@@ -24,7 +24,7 @@
     }
 }
 
-.card-fonctionnement{
+.card-operation{
     display: flex;
     margin: 20px 10px;
     width: $col4;
@@ -35,12 +35,20 @@
     @include mobile-only{
         width: auto;
     }
-    .card-fonctionnement-border{
+    & :hover{
+        &.card-operation-border:hover{
+            background: #F5EDFF;
+            .card-operation-icon i{
+                color: $primaire;
+            }
+        }
+    }
+    .card-operation-border{
         display: flex;
         box-shadow: 5px 5px 5px 5px rgb(200, 200, 200);
         border-radius: 20px;
         background-color: #F6F6F6;
-        .card-fonctionnement-number{
+        .card-operation-number{
             background-color: $primaire;
             height: 20px;
             width: 20px;
@@ -51,22 +59,16 @@
             top: 20px;
             left: -10px;
         }
-        .card-fonctionnement-icon i{
+        .card-operation-icon i{
             height: 60px;
             line-height: 60px;
             padding-right: 10px;
             color: grey;
         }
-        .card-fonctionnement-icon-vio i{
-            color: $primaire;
-        }
-        .card-fonctionnement-text{
+        .card-operation-text{
             height: 60px;
             line-height: 60px;
             padding-right: 50px;
         }  
-    }
-    .card-fonctionnement-border-vio{
-        background-color: #F5EDFF;
     }
 }

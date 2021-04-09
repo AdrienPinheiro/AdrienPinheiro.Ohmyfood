@@ -32,7 +32,9 @@
 .card-restaurants{
     height: auto;
     width: 300px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: -2px 9px 30px 0px rgba(0,0,0,0.20);
+    -webkit-box-shadow: -2px 9px 30px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: -2px 9px 30px 0px rgba(0,0,0,0.20);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -45,7 +47,7 @@
     @include tablette-only{
         margin-bottom: 30px;
     }
-    &.card-restaurants-nouveau{
+    &.card-restaurants-new{
         &:after{
             content: 'Nouveau';
             font-size: small;
@@ -74,18 +76,18 @@
             }
         }
     }
-    .card-restaurants-texte{
+    .card-restaurants-text{
         height: auto;
         position: relative;
         padding: 5px 10px;
-        .card-restaurants-titre{
+        .card-restaurants-title{
             font-weight: bold;
             
         }
-        .card-restaurants-paragraphe{
+        .card-restaurants-paragraph{
             font-size: 15px;
         }
-        .coeur{
+        .heart{
             position:absolute;
             top: 15px;
             right: 15px;
